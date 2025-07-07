@@ -1,13 +1,40 @@
+'use client';
 import Image from "next/image";
-import Button from "./components/button/button";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import SearchButton from "./components/SearchButton";
 
 export default function Home() {
   return (
     <>
+    
+      <Header />
 
-    <h1>abdbjdbf</h1>
+       <main style={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh',
+      paddingBottom: '50px', 
+    }}>
+      
+      <section style={{
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        gap: '20px'
+      }}>
+        
+        <h2>O que vai ser hoje?</h2>
+        <SearchButton />
+      </section>
 
-    <Button></Button>
+
+      <Footer />
+    </main>
+  );
+    
     </>
   );
 }
