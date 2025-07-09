@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
   font-family: "Inter", Verdana;
-  background-color: #5777c4;
+  background-color: white;
   color: #000000;
 }

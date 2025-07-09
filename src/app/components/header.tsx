@@ -6,7 +6,8 @@ export default function Header() {
       background: '#222',
       color: '#fff',
       padding: '20px',
-      textAlign: 'center'
+      textAlign: 'left',
+      fontSize:30,
     }}>
       <h1>HORIZONTE</h1>
     </header>

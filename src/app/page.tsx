@@ -1,7 +1,6 @@
 'use client';
-import Image from "next/image";
 import Header from "./components/header";
-import Footer from "./components/footer";
+import FooterSection from "./components/footer";
 import SearchButton from "./components/SearchButton";
 
 export default function Home() {
@@ -15,23 +14,17 @@ export default function Home() {
     >
       <Header />
 
-      <main style={{ flex: 1 }}>
-        <section
-          style={{
-            height: '100%',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-            gap: '20px',
-          }}
-        >
-          <h2>O que vai ser hoje?</h2>
+      <main className="flex items-center justify-center min-h-screen bg-white text-gray-800 px-4 py-10">
+        <section className="w-full max-w-7xl mx-auto flex flex-col gap-16 items-center">
+          <h2 className="text-3xl font-bold text-center">
+            Qual o Filme escolhido de hoje?
+          </h2>
           <SearchButton />
         </section>
       </main>
 
-      <Footer />
+
+      <FooterSection />
     </div>
   );
 }
